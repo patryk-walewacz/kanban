@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700&subset=latin-ext');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Kalam', cursive;
+	background: #1abc9c;
+}
+.board {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+	padding: 0 20px;
+}
+h1 {
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #000;
+}
+h2 {
+	margin: 0 0 10px 0;
+}
+.column-container {
+	margin-top: 40px;
+	display: flex;
+}
+.column {
+	border: 1px solid #000;
+	flex: 1;
+	min-height: 350px;
+	margin: 0 5px;
+	padding: 20px 10px;
+	box-shadow: 0 0 8px #666;
+	background: url(https://i.imgur.com/K9sipiN.jpg);
+	background-size: cover;
+}
+button {
+	border: none;
+	padding: 3px 20px;
+	font-family: 'Kalam', cursive;
+	box-shadow: 0 0 5px #000;
+	border-radius: 5px;
+	margin: 0 2px;
+	font-size: 15px;
+}
+.btn-delete {
+		background: #c0392b;
+		text-transform: uppercase;
+		font-weight: 700;
+}
+.create-column, .add-card {
+	background: #fff;
+}
+.create-column {
+	margin-top: 20px;
+}
+.card {
+	min-height: 15px;
+	min-width: 40px;
+	background: #f1c40f;
+	box-shadow: 0 0 5px #000;
+}
