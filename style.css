@@ -17,15 +17,15 @@ body {
 h1 {
 	font-weight: 700;
 	text-transform: uppercase;
-	margin: 0 0 10px 0;
 	border-bottom: 1px solid #000;
+	margin: 0;
 }
 h2 {
-	margin: 0 0 10px 0;
+	margin: 0;
 }
 .column-container {
-	margin-top: 40px;
 	display: flex;
+	margin-top: 20px;
 }
 .column {
 	border: 1px solid #000;
@@ -43,8 +43,13 @@ button {
 	font-family: 'Kalam', cursive;
 	box-shadow: 0 0 5px #000;
 	border-radius: 5px;
-	margin: 0 2px;
 	font-size: 15px;
+}
+.column>button {
+	margin: 10px 2px;
+}
+p {
+	margin: 0;
 }
 .btn-delete {
 		background: #c0392b;
@@ -58,8 +63,34 @@ button {
 	margin-top: 20px;
 }
 .card {
-	min-height: 15px;
-	min-width: 40px;
+	min-height: 50px;
 	background: #f1c40f;
 	box-shadow: 0 0 5px #000;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 10px 0;
+	padding: 10px;
+}
+.card button {
+	float: left;
+	margin: 0;
+}
+.card p {
+	display: inline;
+	float: right;
+	padding-right: 30px;
+}
+
+@media (max-width: 1000px) {
+	.column-container {
+		display: block;
+	}
+	.column {
+		margin: 15px 0;
+	}
 }
